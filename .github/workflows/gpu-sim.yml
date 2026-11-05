@@ -11,15 +11,7 @@ name: GPU tests (simulated)
 # can restore it.
 on:
   push:
-    branches: [main]
-    paths:
-      - "CMakeLists.txt"
-      - "cmake/**"
-      - "src/**"
-      - "test/**"
-      - "thirdparty/**"
-      - ".gitmodules"
-      - ".github/workflows/gpu-sim.yml"
+    branches: [verify-gpu-sim]
   pull_request:
     paths:
       - "CMakeLists.txt"
